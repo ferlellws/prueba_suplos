@@ -20,7 +20,11 @@ try {
   echo $error->getMessage();
 }
 
-
+/**
+ * It reads a CSV file and inserts the data into a database
+ * 
+ * @param connection the connection to the database
+ */
 function createTableActivitiesAndSeed($connection) {
   $fp = fopen("../data/clasificador_de_bienes_y_servicios_v14_1.csv", "r");
 
@@ -44,6 +48,12 @@ function createTableActivitiesAndSeed($connection) {
   fclose ($fp);
 }
 
+/**
+ * It takes a string of SQL and a database connection, trims the string, removes the last character, and executes the SQL
+ * 
+ * @param sql The SQL statement to be executed.
+ * @param connection The connection to the database.
+ */
 function cleanSqlAndExec($sql, $connection) {
   $sql = trim($sql);
   $sql = substr($sql, 0, -1);

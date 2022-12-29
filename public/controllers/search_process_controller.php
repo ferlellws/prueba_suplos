@@ -16,6 +16,13 @@ if (isset($_POST['btn_excel'])) {
   header("Location: generate_excel.php?$strParameters");
 }
 
+/**
+ * It takes an array of parameters and values and returns a string of parameters and values.
+ *
+ * @param data The data to be sent to form
+ *
+ * @return the parameters of the data.
+ */
 function getParameters($data) {
   $strParameters = "";
   foreach ($data as $param => $value) {
@@ -24,6 +31,13 @@ function getParameters($data) {
   return $strParameters;
 }
 
+/**
+ * It connects to the database, prepares a query, executes it and returns the statuses
+ * 
+ * @param config This is the configuration array for database.
+ * 
+ * @return An array of statuses
+ */
 function getStatuses($config) {
   $dsn = 'mysql:host=' . $config['db']['host'] . ';dbname=' . $config['db']['name'];
   $connection = new PDO(

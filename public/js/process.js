@@ -34,6 +34,7 @@ const options = {
 const tabs = new Tabs(tabElements, options);
 
 
+/* Adding an event listener to the search button and it adds a radius elements with the list of activities founded. */
 const btnSearchActivity = document.querySelector("#btn-search-activity");
 btnSearchActivity.addEventListener('click', async function () {
     const searchActivity = document.querySelector('#search-activity');
@@ -68,6 +69,7 @@ btnSearchActivity.addEventListener('click', async function () {
     return false;
 });
 
+/* Adding an event listener to the submit button, and if the radio button is null, it adds a class to the search activity input. */
 const btnSubmitActivity = document.querySelector('.btn-submit');
 btnSubmitActivity.addEventListener('click', function (e) {
     const searchActivity = document.querySelector('#search-activity');
@@ -81,6 +83,10 @@ btnSubmitActivity.addEventListener('click', function (e) {
     }
 })
 
+/**
+ * It takes the value of the search input, and if it's not empty, it calls the `getActivitiesWithFetch` function, passing in the search word
+ * @returns An array of activities
+ */
 async function getActivities() {
     const searchActivity = document.querySelector('#search-activity');
     const searchWord = searchActivity.value;
@@ -93,6 +99,11 @@ async function getActivities() {
     }
 }
 
+/**
+ * GetActivitiesWithFetch() is an asynchronous function that returns a promise that resolves to the JSON response of the fetch() call.
+ * @param q - The query string.
+ * @returns the activities founded
+ */
 async function getActivitiesWithFetch(q) {
     let res = await fetch('asynchronous/process.php?q=' + q)
     return res.json()
