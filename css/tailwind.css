@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn-access-module {
+  @apply block max-w-sm bg-indigo-light text-white border-gray-200
+    rounded-md shadow-md hover:bg-indigo-light-hover dark:bg-gray-500
+    dark:hover:bg-gray-600 my-6 font-semibold overflow-hidden mx-auto;
+}
+
+.btn-access-module p {
+  @apply mx-3 my-10;
+}
+
+.btn-access-module span {
+  @apply block bg-indigo-light-600 w-full text-center py-1 dark:bg-gray-700;
+}
+
+.toolbar {
+  @apply bg-indigo-light-600 text-white;
+}
+
+.banner {
+  @apply bg-indigo-light;
+}
+
+.banner .banner--label {
+  @apply text-white font-semibold px-4 py-10;
+}
+
+.buttons-actions {
+  @apply flex justify-end;
+}
+
+.btn-menu-action {
+  width: 100px;
+  height: 100px;
+  @apply border border-white rounded-md text-white text-center
+    flex items-center justify-center cursor-pointer hover:bg-indigo-light-600;
+}
+
+.btn-submit {
+  @apply text-white bg-blue-600 hover:bg-blue-800 focus:ring-4
+    focus:outline-none focus:ring-blue-300 font-medium rounded-lg
+    text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600
+    dark:hover:bg-blue-700 dark:focus:ring-blue-800;
+}
+
+.button-tab {
+  @apply inline-block p-4 rounded-t-lg border-b-2
+    hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300;
+}
+
+.icon-field {
+  @apply inline-flex items-center px-3 text-sm text-gray-900
+    bg-gray-200 border border-r-0 border-gray-300 rounded-l-md
+    dark:bg-gray-600 dark:text-gray-400 dark:border-gray-600;
+}
+
+.input-field-process {
+  @apply rounded-none rounded-r-lg bg-gray-50 !border text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm border-gray-300 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500;
+}
+
+.input-field-process-rounded {
+  @apply bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500;
+}
+
+.btn-search-inline {
+  @apply absolute top-0 right-0 p-2.5 text-sm font-medium text-white bg-blue-700 rounded-r-lg border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800;
+}
+
+.text-area-field {
+  @apply block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500;
+}
+
+.activities-container {
+  height: 260px;
+}
+
+.radio-field {
+  @apply w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-700 dark:border-gray-600;
+}
+
+.field-error {
+  @apply bg-red-50 border border-red-500 text-red-900 placeholder-red-700 text-sm rounded-lg focus:ring-red-500 dark:bg-gray-700 focus:border-red-500 block w-full p-2.5 dark:text-red-500 dark:placeholder-red-500 dark:border-red-500;
+}
+
+/* .label-input {
+  @apply ;
+} */
