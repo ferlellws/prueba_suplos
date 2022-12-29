@@ -28,8 +28,8 @@ Para crear las tablas e importar los datos del Excel de actividades deberá hace
 
 :alien: [http://localhost/prueba_suplos/public/install.php](http://localhost/prueba_suplos/public/install.php)
 
-### Ingreso a la plataforma
+### Ingreso al módulo
 
 Para ingresar debe hacer clic el el siguiente link:
 
-[http://localhost/prueba_suplos/public](http://localhost/prueba_suplos/public)
+:rocket: [http://localhost/prueba_suplos/public](http://localhost/prueba_suplos/public)
